@@ -1,25 +1,26 @@
 import React from 'react';
-import Button from '../components/Button';
+import Button from '@/components/Button';
 
 const LandingPage = () => {
   return (
-    <div className="flex flex-col items-center gap-4 p-8">
-      <h1 className="text-2xl font-bold mb-4">Custom Buttons</h1>
-
+    <div className="space-y-4 p-4">
       {/* Small buttons */}
-      <Button title="Small - Rounded-sm" className="text-sm rounded-sm" />
-      <Button title="Small - Rounded-md" className="text-sm rounded-md" />
-      <Button title="Small - Rounded-full" className="text-sm rounded-full" />
+      <Button title="Small Rounded-sm" styles="text-sm px-2 py-1 rounded-sm bg-blue-500 text-white" />
+      <Button title="Small Rounded-md" styles="text-sm px-2 py-1 rounded-md bg-green-500 text-white" />
+      <Button title="Small Rounded-full" styles="text-sm px-2 py-1 rounded-full bg-red-500 text-white" />
 
       {/* Medium buttons */}
-      <Button title="Medium - Rounded-sm" className="text-base rounded-sm" />
-      <Button title="Medium - Rounded-md" className="text-base rounded-md" />
-      <Button title="Medium - Rounded-full" className="text-base rounded-full" />
+      <Button title="Medium Rounded-sm" styles="text-base px-4 py-2 rounded-sm bg-blue-500 text-white" />
+      <Button title="Medium Rounded-md" styles="text-base px-4 py-2 rounded-md bg-green-500 text-white" />
+      <Button title="Medium Rounded-full" styles="text-base px-4 py-2 rounded-full bg-red-500 text-white" />
 
       {/* Large buttons */}
-      <Button title="Large - Rounded-sm" className="text-lg rounded-sm px-6 py-3" />
-      <Button title="Large - Rounded-md" className="text-lg rounded-md px-6 py-3" />
-      <Button title="Large - Rounded-full" className="text-lg rounded-full px-6 py-3" />
+      <Button title="Large Rounded-sm" styles="text-lg px-6 py-3 rounded-sm bg-blue-500 text-white" />
+      <Button title="Large Rounded-md" styles="text-lg px-6 py-3 rounded-md bg-green-500 text-white" />
+      <Button title="Large Rounded-full" styles="text-lg px-6 py-3 rounded-full bg-red-500 text-white" />
+
+      {/* Extra check: Rounded-lg button */}
+      <Button title="Rounded-lg Button" styles="text-base px-4 py-2 rounded-lg bg-purple-500 text-white" />
     </div>
   );
 };
